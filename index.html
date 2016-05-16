@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -6,10 +5,12 @@
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
     <meta content="yes" name=" apple-mobile-web-app-capable">
     <meta content="telephone=no" name="format-detection">
-    <meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="renderer" content="webkit|ie-comp|ie-stand">
-    <title>rrrrrrrrrrrrrrrrrrrr</title>
-    <meta name="description" content="H-Beam Standard JIS / ASTM / EN / BS / AS Standard Grade  "Q235, SS400, SM490, ASTM A36 / A572Gr....">
+    <title>index</title>
+    <meta name="description" content="H-Beam Standard JIS / ASTM / EN / BS / AS Standard Grade  " Q235, SS400, SM490,
+          ASTM A36
+    / A572Gr....">
     <link href="http://zhonglianwc.idea-source.net/assets/static/css/master.css?v=22" rel="stylesheet">
     <link href="http://zhonglianwc.idea-source.net/assets/static/css/jquery.mCustomScrollbar.css" rel="stylesheet">
     <link rel="stylesheet" href="http://zhonglianwc.idea-source.net/assets/static/css/animate.min.css">
@@ -17,30 +18,32 @@
     <script src="http://zhonglianwc.idea-source.net/assets/static/js/jquery-1.11.1.min.js"></script>
     <script src="http://zhonglianwc.idea-source.net/assets/static/js/app.js"></script>
     <style type="text/css">
-        .product-detail .pro-img.ding{
-            position: relative;
-            bottom:0;
-            left:0;
+        .product-detail .pro-img.ding {
+            position: absolute;
+            bottom: 0;
+            left: 0;
         }
     </style>
 </head>
 <script>
-    $(function(){
+    $(function () {
         Tools.archives.search();
 
         $(document).scroll(function () {
-//            console.log($(document).scrollTop());
-//            console.log($('.index-cumic').outerHeight()+$('.index-footer').outerHeight()+255);
-            if($(document).height()-$(document).scrollTop()<=$('.index-cumic').outerHeight()+$('.index-footer').outerHeight()+255){
-                console.log($(document).height()-$(document).scrollTop());
+            var domHeight = $(document).height();
+            var scrollHeight = $(document).scrollTop();
+            var gap = $('.index-cumic').outerHeight() + $('.index-footer').outerHeight() + 60;
+            //总体的高度-卷去的高度-可视区域的高度（也就是底部剩余的高度）
+            if (domHeight - scrollHeight - $(window).height() <= gap) {
                 $('.product-detail .pro-img').addClass('ding');
-            }else{
+            } else {
                 $('.product-detail .pro-img').removeClass('ding');
             }
         })
     });
 
-</script><body>
+</script>
+<body>
 <div class="header">
     <div class="nav fn-clear">
         <div class="icon-logo fn-left">
@@ -56,7 +59,8 @@
             </div>
             <form class="form-search fn-right">
                 <a href="javascript:;" class="search-btn"><i class="btn-icon"></i></a>
-                <input type="text" onkeydown='if(event.keyCode==13){ $(".search-btn").click();  return false;}' name="keywords" id="keywords" class="search-input" value="SEARCH">
+                <input type="text" onkeydown='if(event.keyCode==13){ $(".search-btn").click();  return false;}'
+                       name="keywords" id="keywords" class="search-input" value="SEARCH">
             </form>
         </div>
         <ul class="fn-clear menu ui-nav fn-right">
@@ -64,7 +68,7 @@
             <li class="ui-nav-item">
                 <span class="ui-head">目录</span>
             </li>
-            <li  class="ui-nav-item">
+            <li class="ui-nav-item">
                 <a href="/" class="nav-link">
                     <span class="cn">HOME</span>
                 </a>
@@ -264,7 +268,8 @@
                                      S235 / S275 / S355 / S450J0, 250 / 300 / 350 / 400" </span>
                             </li>
                             <li class="info-list fn-clear">
-                                <span class="list-title">Size 1</span> <span class="list-main">100mm*100mm---900mm*300mm</span>
+                                <span class="list-title">Size 1</span> <span
+                                    class="list-main">100mm*100mm---900mm*300mm</span>
                             </li>
                             <li class="info-list fn-clear">
                                 <span class="list-title">Size 2</span> <span class="list-main">W6-W30 / HP8-HP14</span>
@@ -337,10 +342,81 @@
                         </ul>
                     </div>
                     <div class="info-main mt20">
+                        <span class="info-title">U-Channel</span>
+                        <ul class="info-ui">
+                            <li class="info-list fn-clear">
+                                <span class="list-title">Grade</span> <span class="list-main">Q235, SS400 / SM490, A36 / A572 GR.50, S235JR/S275JR/S355JR</span>
+                            </li>
+                            <li class="info-list fn-clear">
+                                <span class="list-title">Size 1</span> <span class="list-main">50*25*3*6mm --- 125*65*5.3*6.8mm</span>
+                            </li>
+                            <li class="info-list fn-clear">
+                                <span class="list-title">Size 2</span> <span class="list-main">50*37*4.5mm ---400*102*12.5mm</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info-main mt20">
+                        <span class="info-title">U-Channel</span>
+                        <ul class="info-ui">
+                            <li class="info-list fn-clear">
+                                <span class="list-title">Grade</span> <span class="list-main">Q235, SS400 / SM490, A36 / A572 GR.50, S235JR/S275JR/S355JR</span>
+                            </li>
+                            <li class="info-list fn-clear">
+                                <span class="list-title">Size 1</span> <span class="list-main">50*25*3*6mm --- 125*65*5.3*6.8mm</span>
+                            </li>
+                            <li class="info-list fn-clear">
+                                <span class="list-title">Size 2</span> <span class="list-main">50*37*4.5mm ---400*102*12.5mm</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info-main mt20">
+                        <span class="info-title">U-Channel</span>
+                        <ul class="info-ui">
+                            <li class="info-list fn-clear">
+                                <span class="list-title">Grade</span> <span class="list-main">Q235, SS400 / SM490, A36 / A572 GR.50, S235JR/S275JR/S355JR</span>
+                            </li>
+                            <li class="info-list fn-clear">
+                                <span class="list-title">Size 1</span> <span class="list-main">50*25*3*6mm --- 125*65*5.3*6.8mm</span>
+                            </li>
+                            <li class="info-list fn-clear">
+                                <span class="list-title">Size 2</span> <span class="list-main">50*37*4.5mm ---400*102*12.5mm</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info-main mt20">
+                        <span class="info-title">U-Channel</span>
+                        <ul class="info-ui">
+                            <li class="info-list fn-clear">
+                                <span class="list-title">Grade</span> <span class="list-main">Q235, SS400 / SM490, A36 / A572 GR.50, S235JR/S275JR/S355JR</span>
+                            </li>
+                            <li class="info-list fn-clear">
+                                <span class="list-title">Size 1</span> <span class="list-main">50*25*3*6mm --- 125*65*5.3*6.8mm</span>
+                            </li>
+                            <li class="info-list fn-clear">
+                                <span class="list-title">Size 2</span> <span class="list-main">50*37*4.5mm ---400*102*12.5mm</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info-main mt20">
+                        <span class="info-title">U-Channel</span>
+                        <ul class="info-ui">
+                            <li class="info-list fn-clear">
+                                <span class="list-title">Grade</span> <span class="list-main">Q235, SS400 / SM490, A36 / A572 GR.50, S235JR/S275JR/S355JR</span>
+                            </li>
+                            <li class="info-list fn-clear">
+                                <span class="list-title">Size 1</span> <span class="list-main">50*25*3*6mm --- 125*65*5.3*6.8mm</span>
+                            </li>
+                            <li class="info-list fn-clear">
+                                <span class="list-title">Size 2</span> <span class="list-main">50*37*4.5mm ---400*102*12.5mm</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info-main mt20">
                         <span class="info-title">UPN / UPE</span>
                         <ul class="info-ui">
                             <li class="info-list fn-clear">
-                                <span class="list-title">Grade</span> <span class="list-main">S235JR / S275JR / S355JR</span>
+                                <span class="list-title">Grade</span> <span
+                                    class="list-main">S235JR / S275JR / S355JR</span>
                             </li>
                             <li class="info-list fn-clear">
                                 <span class="list-title">Size</span> <span class="list-main"> "IPE 80 / IPE 100 / IPE120 / IPE 140 / IPE 160 / IPE 180 / IPE 200 /IPE 220 / IPE 240
@@ -353,7 +429,8 @@
                         <span class="info-title">IPEAA</span>
                         <ul class="info-ui">
                             <li class="info-list fn-clear">
-                                <span class="list-title">Grade</span> <span class="list-main">S235JR / S275JR / S355JR</span>
+                                <span class="list-title">Grade</span> <span
+                                    class="list-main">S235JR / S275JR / S355JR</span>
                             </li>
                             <li class="info-list fn-clear">
                                 <span class="list-title">Size</span> <span class="list-main">100mm 120mm 140mm 160mm  180mm  200mm</span>
@@ -426,7 +503,8 @@
 <script>
     header.doFun();
     toTop.doFun();
-</script><script>
+</script>
+<script>
     Tools.archives.view('9');
 </script>
 </body>
