@@ -8,15 +8,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="renderer" content="webkit|ie-comp|ie-stand">
     <title>index</title>
-    <meta name="description" content="H-Beam Standard JIS / ASTM / EN / BS / AS Standard Grade  " Q235, SS400, SM490,
-          ASTM A36
-    / A572Gr....">
-    <link href="http://zhonglianwc.idea-source.net/assets/static/css/master.css?v=22" rel="stylesheet">
-    <link href="http://zhonglianwc.idea-source.net/assets/static/css/jquery.mCustomScrollbar.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://zhonglianwc.idea-source.net/assets/static/css/animate.min.css">
-    <script src="http://zhonglianwc.idea-source.net/assets/static/js/respond.src.js"></script>
-    <script src="http://zhonglianwc.idea-source.net/assets/static/js/jquery-1.11.1.min.js"></script>
-    <script src="http://zhonglianwc.idea-source.net/assets/static/js/app.js"></script>
+    <link href="./assets/static/css/master.css?v=22" rel="stylesheet">
+    <link href="./assets/static/css/jquery.mCustomScrollbar.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/static/css/animate.min.css">
+    <script src="./assets/static/js/respond.src.js"></script>
+    <script src="./assets/static/js/jquery-1.11.1.min.js"></script>
+    <script src="./assets/static/js/app.js"></script>
     <style type="text/css">
         .product-detail .pro-img.ding {
             position: absolute;
@@ -29,11 +26,12 @@
     $(function () {
         Tools.archives.search();
 
+        //滚动定位核心，自己弄的
         $(document).scroll(function () {
             var domHeight = $(document).height();
             var scrollHeight = $(document).scrollTop();
-            var gap = $('.index-cumic').outerHeight() + $('.index-footer').outerHeight() + 60;
-            //总体的高度-卷去的高度-可视区域的高度（也就是底部剩余的高度）
+            var gap = $('.index-cumic').outerHeight() + $('.index-footer').outerHeight();
+            //总体的高度-卷去的高度-可视区域的高度（剩余的刚好是底部高度-gap）
             if (domHeight - scrollHeight - $(window).height() <= gap) {
                 $('.product-detail .pro-img').addClass('ding');
             } else {
@@ -48,7 +46,7 @@
     <div class="nav fn-clear">
         <div class="icon-logo fn-left">
             <a class="logo" href="/">
-                <img src="http://zhonglianwc.idea-source.net/assets/static/images/icon/logo.png">
+                <img src="./assets/static/images/icon/logo.png">
             </a>
         </div>
         <div class="fn-right nav-right fn-clear">
@@ -253,7 +251,7 @@
             <div class="detail-content fn-clear">
                 <div class="fn-left pro-img">
                 <span class="img-left">
-                    <img src="http://zhonglianwc.idea-source.net/uploads/pics/n/20160516,11,16,372.jpg">
+                    <img src="./assets/static/images/icon/product.jpg" />
                 </span>
                 </div>
                 <div class="fn-right product-info">
@@ -460,7 +458,7 @@
 <div class="index-cumic">
     <div class="cumic-cont">
         <div class="cumic-logo foot-logo">
-            <img src="http://zhonglianwc.idea-source.net/assets/static/images/icon/logo-img.png">
+            <img src="./assets/static/images/icon/logo-img.png">
         </div>
         <ul class="cumic-ui fn-clear">
             <li class="cumic-item">
